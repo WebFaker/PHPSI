@@ -12,7 +12,7 @@ else      $desc="";
 // On vérifie si les champs obligatoires sont vides, sinon on retourne un message d'erreur
 if(empty($planet) OR empty($img))
     {
-    echo '<font color="red">Attention, seul le champs <b>description</b> peut rester vide !</font>';
+    echo '<center>Attention, seul le champs <font color="red"><b>description</b></font> peut rester vide !</center> <br /> <center><a href="add.html">Retour en arrière.</a></center>';
     }
 
 // Aucun champ obligatoire n'est vide, on peut donc rentrer dans la table
@@ -20,7 +20,7 @@ else
     {
          $servername = "localhost";
          $username = "root";
-         $password = "coucou";
+         $password = "babytchi99";
          $dbname = "outland";
 
          try {
@@ -31,7 +31,7 @@ else
              VALUES ('$planet', '$img', '$desc')";
              // use exec() because no results are returned
              $conn->exec($sql);
-             echo "C'est ajouté lol !";
+             header('Location: success.html');
              }
          catch(PDOException $e)
              {
