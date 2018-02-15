@@ -19,7 +19,11 @@ else      $prix="";
 // On vérifie si les champs obligatoires sont vides, sinon on retourne un message d'erreur
 if(empty($planet) OR empty($img) OR empty($prix))
     {
+<<<<<<< HEAD:admin/doadd.php
     echo '<center>Attention, seul les champs <font color="red"><b>description</b></font> et <font color="red"><b>température</b></font> peuvent rester vide !</center> <br /> <center><a href="add.php">Retour en arrière.</a></center>';
+=======
+    echo '<center>Attention, seul le champs <font color="red"><b>description</b></font> peut rester vide !</center> <br /> <center><a href="add.html">Retour en arrière.</a></center>';
+>>>>>>> a7d1136c2e5c5225ed5021c79229ce686e5caabd:add.php
     }
 
 // Aucun champ obligatoire n'est vide, on peut donc rentrer dans la table
@@ -27,7 +31,7 @@ else
     {
          $servername = "localhost";
          $username = "root";
-         $password = "coucou";
+         $password = "babytchi99";
          $dbname = "outland";
 
          try {

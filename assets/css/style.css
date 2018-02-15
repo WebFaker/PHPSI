@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   font-family: "roboto", "roboto";
   overflow: hidden;
@@ -292,4 +293,12 @@ body {
 
 .planet__terre__callToActionText:hover {
   color: #676767;
+=======
+.bg-info {
+  background-color: #111111 !important;
+}
+
+.btn-danger {
+  margin-top: 10px !important;
+>>>>>>> a7d1136c2e5c5225ed5021c79229ce686e5caabd
 }
