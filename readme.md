@@ -5,13 +5,15 @@ Le projet Outland est un dictionnaire de l'espace ayant comme but de répertorie
 
 # Sitemap
 ![image](/ref/SiteMap.png)
-# CRUD
 
-## Create
+# Membres de l'équipe
 
-## Read
+Valentine Leroy
 
-## Update
+Nicolas Martin
 
-## Delete
+Christella Levieux
 
+Jason Gourovitch
+
+Enzo Giordano
