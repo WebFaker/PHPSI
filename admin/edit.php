@@ -1,4 +1,5 @@
 <?php
+// Require the file connexion.php to connect to the database
 require_once "connexion.php";
 ?>
 
@@ -40,6 +41,7 @@ require_once "connexion.php";
   </nav>
 
   <?php
+  // Verifying if there's something in "id", otherwise it doesn't create any var
   if(isset($_POST["id"])){
       $id = $_POST["id"];
   }
@@ -60,6 +62,7 @@ require_once "connexion.php";
       <form method="post" action="doedit.php">
         <div class="form-group">
           <label for="name">Nom</label>
+          <!-- $row is taking the value and displaying it into the value -->
           <input value="<?= $row["planete"] ?>" type="text" name="planete" class="form-control">
         </div>
         <div class="form-group">
@@ -81,6 +84,7 @@ require_once "connexion.php";
 
         <div class="form-group">
             <input type="hidden" name="id" value="<?=$row["id"]?>">
+            <!-- Sending all the modifications to the doedit.php file -->
             <input onclick="return confirm('Voulez-vous vraiment enregister vos modifications ?')" class="btn btn-info" type="submit" value="Valider">
         </div>
       </form>
