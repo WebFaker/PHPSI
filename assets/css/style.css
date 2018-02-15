@@ -1,0 +1,295 @@
+body {
+  font-family: "roboto", "roboto";
+  overflow: hidden;
+}
+
+#starfield {
+  width: 100vh;
+  height: 100vh;
+  background: radial-gradient(ellipse at center, #242938, #000 0%);
+  position: fixed;
+  overflow: hidden;
+}
+
+.header {
+  height: 100vh;
+  width: 100vw;
+}
+
+.navbar {
+  opacity: 0;
+  margin: 0 auto;
+  padding-top: 40px;
+  width: 1104px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  transition: 2s;
+}
+
+.header__items {
+  width: 404px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__item {
+  transition: .3s;
+}
+
+.header__item:hover {
+  color: #fff;
+}
+
+.header__item__inscrire {
+  margin-left: 15%;
+}
+
+.header__item {
+  color: #A0A0A0;
+  font-size: 16px;
+  font-family: "roboto";
+  position: fixed;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.header__item__panier {
+  margin-left: 30%;
+}
+
+.header__callToAction {
+  margin-left: auto;
+  margin-right: auto;
+  width: 785px;
+  transform: scale(1);
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: all 4s;
+}
+
+.header__callToActionText {
+  padding-top: 40vh;
+  position: relative;
+  transition: all 4s;
+}
+
+.nav__logo {
+  height: 150px;
+  position: relative;
+  width: 100%;
+  transition: all 2s;
+}
+
+.img__planet__terre {
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: -150px;
+  width: 100%;
+}
+
+@-webkit-keyframes rotating
+/* Safari and Chrome */
+
+  {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.rotating {
+  -webkit-animation: rotating 60s linear infinite;
+  -moz-animation: rotating 60s linear infinite;
+  -ms-animation: rotating 60s linear infinite;
+  -o-animation: rotating 60s linear infinite;
+  animation: rotating 60s linear infinite;
+}
+
+.conatainer__nav__planet {
+  top: 0px;
+  margin-top: -350px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 595px;
+  margin-left: 50px;
+}
+
+.nav__planet__earth {
+  position: relative;
+  z-index: 1000;
+  border: solid 1px #fff;
+  width: 63px;
+  height: 63px;
+  border-radius: 31.5px;
+  transition: .3s;
+}
+
+.nav__planet__earth:hover {
+  width: 142px;
+}
+
+.nav__planet__namek {
+  position: relative;
+  z-index: 1000;
+  border: solid 1px #fff;
+  width: 63px;
+  height: 63px;
+  border-radius: 35px;
+  transition: .3s;
+}
+
+.nav__planet__namek:hover {
+  width: 142px;
+}
+
+.nav__planet__namekimg {
+  margin-top: -3px;
+  margin-left: -2px;
+}
+
+.nav__planet__proximab {
+  position: relative;
+  z-index: 1000;
+  border: solid 1px #fff;
+  width: 63px;
+  height: 63px;
+  border-radius: 35px;
+  transition: .3s;
+}
+
+.nav__planet__proximab:hover {
+  width: 142px;
+}
+
+.nav__planet__mercure {
+  position: relative;
+  z-index: 1000;
+  border: solid 1px #fff;
+  width: 63px;
+  height: 63px;
+  border-radius: 35px;
+  transition: .3s;
+}
+
+.nav__planet__mercure:hover {
+  width: 142px;
+}
+
+.nav__planet__mercureimg {
+  padding-top: 3px;
+  padding-left: 3px;
+}
+
+.nav__planet__kepler {
+  position: relative;
+  z-index: 1000;
+  border: solid 1px #fff;
+  width: 63px;
+  height: 63px;
+  border-radius: 35px;
+  transition: .3s;
+}
+
+.nav__planet__kepler:hover {
+  width: 142px;
+}
+
+.nav__planet__b612 {
+  position: relative;
+  z-index: 1000;
+  border: solid 1px #fff;
+  width: 63px;
+  height: 63px;
+  border-radius: 35px;
+  transition: .3s;
+}
+
+.nav__planet__b612:hover {
+  width: 142px;
+}
+
+.nav__planet__b612img {
+  padding-top: 7px;
+  padding-left: 7px;
+}
+
+.nav__planet {
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+.wallE {
+  position: fixed;
+  right: 0;
+  margin-right: -211px;
+  transition: .3s;
+}
+
+.wallE:hover {
+  margin-right: -170px;
+}
+
+.planet__containers {
+  width: 100vw;
+  opacity: 0;
+  transition: 3s ease-in;
+}
+
+.planet__terre {
+  padding-top: 100px;
+  padding-bottom: 40px;
+  height: 144px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.terre__tilte {
+  color: #fff;
+  font-size: 48px;
+  font-family: 'roboto';
+  margin: 0 auto;
+  position: relative;
+}
+
+.planet__terre__callToActionText {
+  color: #fff;
+  margin: 0 auto;
+  font-family: "roboto";
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: .3s;
+  position: relative;
+}
+
+.planet__terre__callToActionText:hover {
+  color: #676767;
+}
