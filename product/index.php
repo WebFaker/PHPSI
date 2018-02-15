@@ -21,7 +21,7 @@ require_once "../admin/connexion.php";
       <nav class="navbar">
         <img src="assets/img/outlandWhite.png" class="logo__header" alt="logo">
         <ul class="header__items">
-          <li class="header__item header__item__panier"><a class="header__item" href="../admin/index.html">| Paramètres</a></li>
+          <li class="header__item header__item__panier"><a class="header__item" href="../admin/index.php">| Paramètres</a></li>
         </ul>
       </nav>
     </header>
