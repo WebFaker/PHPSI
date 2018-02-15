@@ -33,7 +33,7 @@ require_once "connexion.php";
 
 <?php
 // Preparing the Statement, and selecting the columns id, planete, image, description, temperature, and prix from the planetes table.
-$stmt = $conn->prepare("SELECT id, planete, image, description, temperature, prix FROM planetes");
+$stmt = $conn->prepare("SELECT id, planete, image, description, temperature, km FROM planetes");
 // Executing the action above.
 $stmt->execute();
 // Looking if "id" is set. Otherwise it shows nothing.
@@ -54,11 +54,10 @@ if(isset($_SESSION["id"])){
               <th>Image</th>
               <th>Description</th>
               <th>Température</th>
-              <th>Prix</th>
+              <th>Diamètre</th>
               <th>Action</th>
             </tr>
-          <?php
-          while (false !== $row = $stmt->fetch(PDO::FETCH_ASSOC)) :?>
+          <?php while (false !== $row = $stmt->fetch(PDO::FETCH_ASSOC)) :?>
             <tr>
               <td>
                 <?= $row["planete"]?>
@@ -73,7 +72,7 @@ if(isset($_SESSION["id"])){
                 <?= $row["temperature"]?>
               </td>
               <td>
-                <?= $row["prix"]?>
+                <?= $row["km"]?>
               </td>
               <td>
 

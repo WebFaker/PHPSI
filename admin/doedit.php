@@ -7,7 +7,7 @@ $sql = "UPDATE
   `image`= :image,
   `description`= :description,
   `temperature`= :temperature,
-  `prix`= :prix
+  `km`= :km
   WHERE
   `id` = :id
 ;";
@@ -19,7 +19,7 @@ $stmt->bindValue(':planete', $_POST['planete']);
 $stmt->bindValue(':image', $_POST['image']);
 $stmt->bindValue(':description', $_POST['description']);
 $stmt->bindValue(':temperature', $_POST['temperature']);
-$stmt->bindValue(':prix', $_POST['prix']);
+$stmt->bindValue(':km', $_POST['km']);
 $stmt->execute();
 if ($stmt->errorCode() !== '00000') {
     var_dump($stmt->errorInfo());

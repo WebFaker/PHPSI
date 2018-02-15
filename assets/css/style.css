@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 body {
   font-family: "roboto", "roboto";
   overflow: hidden;
@@ -132,13 +131,17 @@ body {
   animation: rotating 60s linear infinite;
 }
 
+.nav__planet {
+  width: 49px;
+  height: 49px;
+}
+
 .conatainer__nav__planet {
-  top: 0px;
+  top: 0;
   margin-top: -350px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  height: 595px;
   margin-left: 50px;
 }
 
@@ -183,6 +186,7 @@ body {
   height: 63px;
   border-radius: 35px;
   transition: .3s;
+  margin-top: 15px;
 }
 
 .nav__planet__proximab:hover {
@@ -289,16 +293,4 @@ body {
   cursor: pointer;
   transition: .3s;
   position: relative;
-}
-
-.planet__terre__callToActionText:hover {
-  color: #676767;
-=======
-.bg-info {
-  background-color: #111111 !important;
-}
-
-.btn-danger {
-  margin-top: 10px !important;
->>>>>>> a7d1136c2e5c5225ed5021c79229ce686e5caabd
 }
