@@ -1,5 +1,4 @@
 body {
-  font-family: "roboto", "roboto";
   overflow: hidden;
 }
 
@@ -48,7 +47,6 @@ body {
 .header__item {
   color: #A0A0A0;
   font-size: 16px;
-  font-family: "roboto";
   position: fixed;
   cursor: pointer;
   letter-spacing: 1px;
@@ -280,7 +278,6 @@ body {
 .terre__tilte {
   color: #fff;
   font-size: 48px;
-  font-family: 'roboto';
   margin: 0 auto;
   position: relative;
 }
@@ -288,7 +285,6 @@ body {
 .planet__terre__callToActionText {
   color: #fff;
   margin: 0 auto;
-  font-family: "roboto";
   letter-spacing: 2px;
   cursor: pointer;
   transition: .3s;

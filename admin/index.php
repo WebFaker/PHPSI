@@ -24,10 +24,8 @@ require_once "connexion.php";
   <nav class="navbar">
     <img src="assets/img/outlandWhite.svg" class="navbar__logo" alt="logo">
     <ul class="header__items">
-      <li class="header__item header__item__panier"><a class="header__item" href="add.php">Ajouter une planète</a></li>
-    </ul>
-    <ul class="header__items">
-      <li class="header__item header__item__panier"><a class="header__item" href="../index.php">| Retour au site</a></li>
+      <li class="header__item header__item__panier">
+        <a class="header__item" href="../index.php">| Retour au site</a></li>
     </ul>
   </nav>
 
@@ -46,6 +44,7 @@ if(isset($_SESSION["id"])){
       <div class="card mt-5">
         <div class="card-header">
           <h2>Liste des planètes</h2>
+          <a href="add.php">Ajouter une planète</a>
         </div>
         <div class="card-body">
           <table class="table table-bordered">

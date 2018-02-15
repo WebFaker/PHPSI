@@ -1,7 +1,9 @@
 body {
+  font-family: 'Obitron', sans-serif;
   height: 100vh;
   width: 100vw;
   overflow: hidden;
+  color: #FFF;
 }
 
 #starfield {
@@ -24,7 +26,6 @@ body {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  width: 1174px;
   align-items: center;
 }
 
@@ -36,8 +37,6 @@ body {
   position: absolute;
 }
 
-.logo__header {}
-
 .header__items {
   width: 430px;
   display: flex;
@@ -46,25 +45,22 @@ body {
 }
 
 .header__item {
-  color: white;
+  color: #A0A0A0;
   font-size: 16px;
-  font-family: "helveticaNeue-Thin";
   cursor: pointer;
   letter-spacing: 1px;
   transition: .3s;
+  margin-left: 152px;
 }
 
 .header__item:hover {
-  letter-spacing: 3px;
+  color: #FFF;
 }
 
 /*                             MAIN                             */
 
 .main {
-  background: #fff;
   position: relative;
-  width: 1311px;
-  height: 682px;
   margin-top: -750px;
   left: 0;
   right: 0;
@@ -93,22 +89,17 @@ body {
 
 .main__title {
   font-size: 36px;
-  font-family: "helveticaNeue";
 }
 
 .main__subTitle {
   font-size: 24px;
-  font-family: "helveticaNeue-Light";
   padding-left: 240px;
 }
 
-.main__subTitle__modif {
-  font-family: "helveticaNeue-Thin";
-}
+.main__subTitle__modif {}
 
 .main__descriptionText {
   font-size: 24px;
-  font-family: "helveticaNeue-Light";
   margin-top: 60px;
 }
 
@@ -116,10 +107,20 @@ body {
   float: right;
 }
 
+.back__link {
+  color: #A0A0A0;
+  transition: .3s;
+}
+
+.back__link:hover {
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: .3s;
+}
+
 .main__descriptionRating {
   font-size: 20px;
-  color: grey;
-  font-family: "helveticaNeue-Light";
+  color: #A5A5A5;
   margin-top: 60px;
 }
 
@@ -130,8 +131,8 @@ body {
 
 .main__descriptionPrice {
   font-size: 24px;
-  font-family: "helveticaNeue";
-  color: #9B1616;
+  margin-top: -64.5px;
+  color: #A1A1A1;
 }
 
 .main__descriptionButtonContainer {}
@@ -139,7 +140,6 @@ body {
 .main__descriptionButton {
   margin-top: 50px;
   font-size: 20px;
-  font-family: "helveticaNeue-Bold";
   color: #fff;
   cursor: pointer;
   transition: .1s;

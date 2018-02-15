@@ -1,5 +1,5 @@
 <?php
-// On commence par récupérer les champs inscrits sur le formulaire
+// Starting by taking all the data we typed in the add.php file
 if(isset($_POST['planet']))      $planet=$_POST['planet'];
 else      $planet="";
 
@@ -7,6 +7,7 @@ if(isset($_POST['img']))      $img=$_POST['img'];
 else      $img="";
 
 if(isset($_POST['desc']))      $desc=$_POST['desc'];
+// If nothing has been typed, create an empty var
 else      $desc="";
 
 if(isset($_POST['temp']))      $temp=$_POST['temp'];
@@ -16,20 +17,22 @@ if(isset($_POST['km']))      $km=$_POST['km'];
 else      $km="";
 
 
-// On vérifie si les champs obligatoires sont vides, sinon on retourne un message d'erreur
+// Checking if the needed fields has been entered, if not, get an error
 if(empty($planet) OR empty($img) OR empty($km))
     {
     echo '<center>Attention, seul les champs <font color="red"><b>description</b></font> et <font color="red"><b>température</b></font> peuvent rester vide !</center> <br /> <center><a href="add.php">Retour en arrière.</a></center>';
     }
 
-// Aucun champ obligatoire n'est vide, on peut donc rentrer dans la table
+// All the needed fields are set, we're now entering into the database
 else
     {
+// Connect to the database
          $servername = "localhost";
          $username = "root";
          $password = "coucou";
          $dbname = "outland";
 
+// Trying to 
          try {
              $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
              // set the PDO error mode to exception
