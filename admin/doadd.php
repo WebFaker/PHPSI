@@ -40,8 +40,20 @@ else
              $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 // Inserting into the database named "planetes", into the columns : "planete", "image", "description", "temperature" and "km"
 // The values below : "$planet", "$img", "$desc", "$temp", "$km"
-             $sql = "INSERT INTO planetes (planete, image, description, temperature, km)
-             VALUES ('$planet', '$img', '$desc', '$temp', '$km')";
+             $sql = "INSERT INTO
+              planetes
+               (planete,
+                  image,
+                   description,
+                    temperature,
+                     km)
+             VALUES
+             ('$planet',
+                '$img',
+                 '$desc',
+                  '$temp',
+                   '$km')
+                   ";
              // use exec() because no results are returned
              $conn->exec($sql);
 // header is used to take the user to a new page, here, to success.html
