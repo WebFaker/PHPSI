@@ -9,6 +9,12 @@ require_once "../admin/connexion.php";
     <title>Outland - Description</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:500" rel="stylesheet">
+    <style>
+    body {
+      font-family: 'Orbitron', sans-serif;
+      }
+  </style>
   </head>
   <body>
     <header class="header">
@@ -36,46 +42,16 @@ require_once "../admin/connexion.php";
         <div class="main__description">
           <h2 class="main__title"><?= $row["planete"] ?></h2>
           <p class="main__descriptionText"><?= $row["description"] ?></p>
-          <p class="main__descriptionRating">Température : <?= $row["temperature"] ?></p>
+          <p class="main__descriptionRating">Température : <?= $row["temperature"] ?><br /><br /><a class="back__link" href="../index.php">Retour au menu</a></p>
           <div class="position">
             <p class="main__descriptionPrice">Diamètre : <?= $row["km"] ?> </p>
         </div>
         <div class="main__img">
-          <img class="planet__img" src="<?= $row["image"] ?>" alt="">
+          <img class="planet__img rotating" src="<?= $row["image"] ?>" alt="">
         </div>
       </div>
 
     </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   </body>
   <script type="text/javascript">

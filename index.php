@@ -11,6 +11,12 @@ require_once "admin/connexion.php";
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="assets/se-connecter.html">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:500" rel="stylesheet">
+    <style>
+    body {
+      font-family: 'Orbitron', sans-serif;
+      }
+  </style>
   </head>
 
   <body>
@@ -51,7 +57,7 @@ require_once "admin/connexion.php";
             <img src="<?= $row["image"]?>" class="nav__planet" alt="">
             </a>
         </div>
-        
+
           <?php endwhile;?>
       </div>
     </header>
@@ -100,14 +106,6 @@ require_once "admin/connexion.php";
         counter = 1;
       }
     });
-
-
-
-
-
-
-
-
 
     window.onload = function() {
 
