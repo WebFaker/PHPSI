@@ -43,7 +43,7 @@ require_once "connexion.php";
   if(isset($_POST["id"])){
       $id = $_POST["id"];
   }
-  $stmt = $conn->prepare("SELECT id, planete, image, description, temperature, prix FROM planetes WHERE id=$id");
+  $stmt = $conn->prepare("SELECT id, planete, image, description, temperature, km FROM planetes WHERE id=$id");
   $stmt->execute();
 
   ?>
@@ -75,8 +75,8 @@ require_once "connexion.php";
           <input value="<?= $row["temperature"] ?>" type="text" name="temperature" class="form-control">
         </div>
         <div class="form-group">
-          <label for="name">Prix</label>
-          <input value="<?= $row["prix"] ?>" type="text" name="prix" class="form-control">
+          <label for="name">Diamtètre</label>
+          <input value="<?= $row["km"] ?>" type="text" name="km" class="form-control">
         </div>
 
         <div class="form-group">

@@ -59,8 +59,8 @@
             <input placeholder="en °C" type="text" name="temp" class="form-control">
           </div>
           <div class="form-group">
-            <label for="prix">Prix*</label>
-            <input placeholder="Montant" type="text" name="prix" class="form-control">
+            <label for="km">Diamètre</label>
+            <input placeholder="en KM" type="text" name="km" class="form-control">
           </div>
           <div class="form-group">
             <button onclick="return confirm('Voulez-vous vraiment ajouter ceci ?')" type="submit" class="btn btn-info">Ajouter à la liste</button>
