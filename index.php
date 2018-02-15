@@ -107,14 +107,6 @@ require_once "admin/connexion.php";
       }
     });
 
-
-
-
-
-
-
-
-
     window.onload = function() {
 
       var element = "starfield";

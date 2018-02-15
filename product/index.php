@@ -47,41 +47,11 @@ require_once "../admin/connexion.php";
             <p class="main__descriptionPrice">Diamètre : <?= $row["km"] ?> </p>
         </div>
         <div class="main__img">
-          <img class="planet__img" src="<?= $row["image"] ?>" alt="">
+          <img class="planet__img rotating" src="<?= $row["image"] ?>" alt="">
         </div>
       </div>
 
     </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   </body>
   <script type="text/javascript">
