@@ -4,7 +4,7 @@
 Le projet Outland est un dictionnaire de l'espace ayant comme but de répertorier une liste de planètes réelles et fictives.
 
 # Sitemap
-!.[.].(/ref/SiteMap.png)
+![image](/ref/SiteMap.png)
 # CRUD
 
 ## Create
