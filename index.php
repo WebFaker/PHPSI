@@ -7,7 +7,7 @@ require_once "admin/connexion.php";
 
   <head>
     <meta charset="utf-8">
-    <title>Outland - Des planètes aux meilleurs prix.</title>
+    <title>Outland - Le répertoire en ligne de planètes.</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="assets/se-connecter.html">
